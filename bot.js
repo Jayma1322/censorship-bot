@@ -106,10 +106,7 @@ bot.on('message', msg => {
 			if (typeof result !== "string") {
 				result = require("util").inspect(result);
 			};
-
-			msg.channel.send(result, {
-				code: "x1"
-			});
+			msg.channel.send(result);
 		};
 	};
 });
